@@ -60,6 +60,8 @@ export default {
 				'offline-indicator': 'hsl(var(--offline-indicator))',
 				'message-sent': 'hsl(var(--message-sent))',
 				'message-received': 'hsl(var(--message-received))',
+				'gradient-from': 'hsl(var(--gradient-from))',
+				'gradient-to': 'hsl(var(--gradient-to))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

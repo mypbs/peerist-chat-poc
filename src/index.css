@@ -8,43 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 120 20% 98%;
-    --foreground: 120 15% 15%;
+    /* Peerist.io inspired purple-to-blue gradient theme */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
 
-    --card: 120 25% 96%;
-    --card-foreground: 120 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
 
-    --popover: 120 25% 96%;
-    --popover-foreground: 120 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
 
-    --primary: 142 76% 36%;
-    --primary-foreground: 120 25% 98%;
+    --primary: 262 83% 58%; /* Beautiful purple matching Peerist brand */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 120 30% 90%;
-    --secondary-foreground: 120 15% 25%;
+    --secondary: 195 100% 50%; /* Cyan blue matching Peerist brand */
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 120 25% 93%;
-    --muted-foreground: 120 10% 45%;
+    --muted: 220 13% 91%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 152 60% 50%;
-    --accent-foreground: 120 25% 98%;
+    --accent: 195 100% 50%; /* Cyan accent */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 120 20% 85%;
-    --input: 120 25% 92%;
-    --ring: 142 76% 36%;
+    --border: 220 13% 91%;
+    --input: 0 0% 100%;
+    --ring: 262 83% 58%;
 
     --success: 142 76% 36%;
-    --success-foreground: 120 25% 98%;
+    --success-foreground: 0 0% 100%;
     
     --online-indicator: 142 85% 45%;
     --offline-indicator: 0 50% 50%;
     
-    --message-sent: 142 50% 92%;
-    --message-received: 120 25% 96%;
+    --message-sent: 262 83% 95%; /* Light purple for sent messages */
+    --message-received: 195 100% 95%; /* Light cyan for received messages */
 
+    /* Peerist gradient colors */
+    --gradient-from: 262 83% 58%; /* Deep purple */
+    --gradient-to: 195 100% 50%; /* Cyan blue */
+    
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
@@ -109,6 +114,8 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background: linear-gradient(135deg, hsl(var(--gradient-from)), hsl(var(--gradient-to)));
+    min-height: 100vh;
   }
 }
