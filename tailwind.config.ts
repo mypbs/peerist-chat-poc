@@ -52,6 +52,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+				'online-indicator': 'hsl(var(--online-indicator))',
+				'offline-indicator': 'hsl(var(--offline-indicator))',
+				'message-sent': 'hsl(var(--message-sent))',
+				'message-received': 'hsl(var(--message-received))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
